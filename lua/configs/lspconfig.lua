@@ -3,7 +3,15 @@ local lspconfig = require "lspconfig"
 
 nvlsp.defaults()
 
-local servers = { "html", "cssls", "clangd" }
+local servers = {
+  "html",
+  "cssls",
+  "tailwindcss",
+  "lua_ls",
+  "rust_analyzer",
+  "clangd",
+  "pyright",
+}
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
@@ -13,4 +21,3 @@ for _, lsp in ipairs(servers) do
     capabilities = nvlsp.capabilities,
   }
 end
-
