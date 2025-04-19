@@ -33,7 +33,7 @@ map("v", "<Tab>", ">gv", { desc = "Indent to the right" })
 map("v", "<S-Tab>", "<gv", { desc = "Indent to the left" })
 
 -- Telescope
-map("n", "<leader>fn", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
+map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
 map("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Find recent" })
 map("n", "<leader>fw", "<cmd>Telescope live_grep<cr>", { desc = "Find word" })
 map("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find current" })
