@@ -55,5 +55,5 @@ map("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show line diagnostics
 map("n", "K", vim.lsp.buf.hover, { desc = "Show documentation for under cursor" })
 
 -- Adding inserts with normal mode without leaving normal mode
-vim.keymap.set('n', '<CR>', 'm`o<Esc>``')
-vim.keymap.set('n', '<S-CR>', 'm`O<Esc>``')
+vim.keymap.set("n", "<CR>", "m`o<Esc>``")
+vim.keymap.set("n", "<S-CR>", "m`O<Esc>``")

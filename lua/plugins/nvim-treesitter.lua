@@ -18,6 +18,7 @@ return {
         "lua",
         "gitignore",
         "c",
+        "java",
       },
       sync_install = false,
       highlight = { enable = true },

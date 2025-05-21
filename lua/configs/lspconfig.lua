@@ -11,6 +11,7 @@ local servers = {
   "rust_analyzer",
   "clangd",
   "pyright",
+  "jdtls",
 }
 
 -- lsps with default config
