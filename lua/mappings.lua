@@ -53,6 +53,7 @@ map("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Smart rename" })
 map("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", { desc = "Show buffer diagnostics" })
 map("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show line diagnostics" })
 map("n", "K", vim.lsp.buf.hover, { desc = "Show documentation for under cursor" })
+map("n", "<leader>fm", "<cmd>RustFmt<CR>", { desc = "Format file"})
 
 -- Adding inserts with normal mode without leaving normal mode
 vim.keymap.set("n", "<CR>", "m`o<Esc>``")

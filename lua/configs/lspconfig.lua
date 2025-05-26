@@ -8,7 +8,6 @@ local servers = {
   "cssls",
   "tailwindcss",
   "lua_ls",
-  "rust_analyzer",
   "clangd",
   "pyright",
   "jdtls",
