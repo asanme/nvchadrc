@@ -11,6 +11,7 @@ local servers = {
   "clangd",
   "pyright",
   "jdtls",
+  "zls"
 }
 
 -- lsps with default config
