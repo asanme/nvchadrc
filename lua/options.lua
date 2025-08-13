@@ -40,3 +40,18 @@ opt.scrolloff = 190
 -- vim.g.neovide_opacity = 0.8
 -- vim.g.neovide_normal_opacity = 0.8
 -- vim.g.neovide_refresh_rate = 60
+--
+
+-- Note! This is for windows only, make sure to enable it then
+vim.g.clipboard = {
+  name = "WslClipboard",
+  copy = {
+    ["+"] = "clip.exe",
+    ["*"] = "clip.exe",
+  },
+  paste = {
+    ["+"] = 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write(($([Console]::Out.Encoding = [System.Text.Encoding]::UTF8); Get-Clipboard -Raw).ToString().Replace("`r", ""))',
+    ["*"] = 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write(($([Console]::Out.Encoding = [System.Text.Encoding]::UTF8); Get-Clipboard -Raw).ToString().Replace("`r", ""))',
+  },
+  cache_enabled = 0,
+}
