@@ -14,6 +14,19 @@ local options = {
     liquid = { "prettier" },
     lua = { "stylua" },
     python = { "isort", "black" },
+    odin = { "odinfmt" },
+  },
+  formatters = {
+    odinfmt = {
+      function(bufnr)
+        local filepath = vim.api.nvim_buf_get_name(bufnr)
+        return {
+          exe = "/usr/bin/odinfmt",
+          args = { "-w", filepath },
+          stdin = false,
+        }
+      end,
+    },
   },
 }
 

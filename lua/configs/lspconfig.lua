@@ -11,7 +11,8 @@ local servers = {
   "clangd",
   "pyright",
   "jdtls",
-  "zls"
+  "zls",
+  "ols"
 }
 
 -- lsps with default config
@@ -22,3 +23,5 @@ for _, lsp in ipairs(servers) do
     capabilities = nvlsp.capabilities,
   }
 end
+
+lspconfig.old.setup{}

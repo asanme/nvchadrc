@@ -19,6 +19,7 @@ return {
         "gitignore",
         "c",
         "java",
+        "odin"
       },
       sync_install = false,
       highlight = { enable = true },
